@@ -18,6 +18,7 @@ if shape == "rectangle":
 
     area = length * width
     # code a formula to calculate perimeter of rectangle and save in variable.
+    perimeter = 2 * (length + width)
 
     print("Area: ", area)
     print("Perimeter: ", perimeter)
@@ -26,9 +27,20 @@ elif shape == "square":
     side = float(input("Enter the side length: "))
 
     # code a formula to calculate area of square and save in variable.
+    area = side ** 2
     perimeter = 4 * side
 
     print("Area: ", area)
     print("Perimeter: ", perimeter)
 
 # write a code to find area and perimeter for circle as well.
+elif shape == "circle":
+    radius = float(input("Enter the radius: "))
+
+    # code a formula to calculate area and perimeter of circle and save in variables.
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+
+    print("Area:", area)
+    print("Perimeter:", perimeter)
+    
